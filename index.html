@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Simple Past: Regular and Irregular Verbs</title>
+<style>
+:root{--bg:#FFF6EA;--card:#FFFDF8;--ink:#5B3F36;--soft:#8A5A44;--terra:#C9775B;--sand:#F3DDBF;--line:#E8C9A0;--peach:#FBEBD6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2B211D;--card:#382B26;--ink:#F3DDBF;--soft:#E8B98A;--terra:#D98B6E;--sand:#4A3830;--line:#5A443A;--peach:#42332C;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#2B211D;--card:#382B26;--ink:#F3DDBF;--soft:#E8B98A;--terra:#D98B6E;--sand:#4A3830;--line:#5A443A;--peach:#42332C;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Calibri,"Segoe UI",system-ui,sans-serif}
+main{max-width:720px;margin:0 auto;padding:20px 14px 40px}
+h1{font-family:Georgia,serif;font-size:26px;line-height:1.2;margin:8px 0 4px}
+.sub{color:var(--soft);margin:0 0 14px}
+.bar{display:flex;gap:8px;margin-bottom:16px}
+.bar button{flex:1;border:1px solid var(--line);background:var(--sand);color:var(--ink);padding:9px;border-radius:10px;font:inherit;font-weight:600}
+details{margin:0}
+summary{list-style:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
+summary::-webkit-details-marker{display:none}
+.topic{background:var(--card);border:2px solid var(--c);border-radius:16px;margin-bottom:12px;overflow:hidden}
+.topic>summary{display:flex;align-items:center;gap:10px;padding:14px;font-family:Georgia,serif;font-weight:700;font-size:18px;background:var(--sand)}
+.topic>summary .ic{font-size:26px}
+summary .chev{margin-left:auto;transition:transform .2s;color:var(--c)}
+details[open]>summary .chev{transform:rotate(90deg)}
+.body{padding:10px 12px 12px}
+.subt{border:1px solid var(--line);border-radius:12px;margin:8px 0;background:var(--bg)}
+.subt>summary{display:flex;align-items:center;gap:8px;padding:11px 12px;font-weight:700}
+.subt>.body{padding:4px 12px 12px}
+h3{font-family:Georgia,serif;font-size:16px;color:var(--terra);margin:14px 0 6px}
+p{margin:6px 0}
+ul{margin:6px 0;padding-left:20px}
+li{margin:4px 0}
+.ex{background:var(--peach);border-left:4px solid var(--c);padding:8px 12px;border-radius:8px;margin:8px 0;font-style:italic}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;margin:8px 0;font-size:15px}
+th{background:var(--terra);color:#fff;text-align:left;padding:7px 9px}
+td{padding:7px 9px;border-bottom:1px solid var(--line)}
+tr:nth-child(even) td{background:var(--peach)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+.card{background:var(--card);border:1px solid var(--c);border-radius:10px;padding:8px 11px}
+.card b{color:var(--terra)}
+.bad{color:#b5473a}.good{color:#4f7a3d}
+@media (prefers-color-scheme:dark){.bad{color:#f19a8a}.good{color:#a8cf8f}}
+.qs{padding-left:24px}.qs li{margin:12px 0;line-height:2.1}
+.qs input{font:inherit;width:110px;padding:4px 8px;border:2px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);text-align:center}
+.qs input.wide{width:150px}
+.qs input.ok{border-color:#5f9a47;background:rgba(95,154,71,.15)}
+.qs input.no{border-color:#c0503f;background:rgba(192,80,63,.12)}
+.actions{display:flex;gap:8px;margin-top:12px}
+.actions button{flex:1;border:0;background:var(--terra);color:#fff;padding:11px;border-radius:10px;font:inherit;font-weight:700}
+.actions button.alt{background:var(--sand);color:var(--ink);border:1px solid var(--line)}
+#msg{font-weight:700;margin-top:10px;text-align:center}
+#msg.win{font-size:20px;color:var(--terra)}
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:50}
+.idtag{display:table;margin:0 0 10px auto;text-align:center;font-size:14px;line-height:1.4;color:var(--soft);padding:8px 16px;border:3px solid transparent;border-radius:14px;background:linear-gradient(var(--card),var(--card)) padding-box,linear-gradient(135deg,#C9775B,#D9A648,#D99A8B,#B9694C) border-box;box-shadow:0 3px 10px rgba(201,119,91,.3)}.idtag b{color:var(--ink);font-family:Georgia,serif;font-size:15px}
+</style>
+</head>
+<body>
+<main>
+<div class="idtag"><b>Yordy Willian Vásquez Marte</b><br>2026-2216</div>
+<h1>Simple Past: Regular and Irregular Verbs</h1>
+<div class="bar"><button id="o">Open all</button><button id="c">Close all</button></div>
+
+<details class="topic" style="--c:#C9775B"><summary><span class="ic">📅</span>1. What is the Simple Past?<span class="chev">▶</span></summary><div class="body">
+<details class="subt"><summary>📄 1.1 Definition and uses<span class="chev">▶</span></summary><div class="body">
+<div class="ex">I visited my grandmother last Sunday.<br>She studied English yesterday.</div>
+<h3>When do we use it?</h3>
+<div class="grid">
+<div class="card"><b>Finished actions</b><br>We finished the exam.</div>
+<div class="card"><b>Specific time</b><br>I was born in 2005.</div>
+<div class="card"><b>Series of actions</b><br>He woke up, ate and left.</div>
+<div class="card"><b>Past habits</b><br>I played baseball every day.</div></div>
+</div></details>
+<details class="subt"><summary>⏰ 1.2 Time expressions<span class="chev">▶</span></summary><div class="body"><div class="wrap"><table>
+<tr><th>Expression</th><th>Example</th></tr>
+<tr><td>yesterday</td><td>I called my mother yesterday.</td></tr>
+<tr><td>last night / week / year</td><td>We traveled last week.</td></tr>
+<tr><td>two days ago</td><td>He arrived two hours ago.</td></tr>
+<tr><td>in + year</td><td>She moved to Santiago in 2019.</td></tr>
+<tr><td>when I was a child</td><td>I lived in a small town when I was a child.</td></tr></table></div></div></details>
+</div></details>
+
+<details class="topic" style="--c:#D9A648"><summary><span class="ic">📝</span>2. Regular verbs<span class="chev">▶</span></summary><div class="body">
+<details class="subt"><summary>✏️ 2.1 The -ed rule and spelling<span class="chev">▶</span></summary><div class="body">
+<p>Add <b>-ed</b> to the base form. It is the same for every subject (I, you, he, she, it, we, they).</p>
+<div class="ex">I worked all day.<br>She cleaned her room.</div>
+<div class="wrap"><table>
+<tr><th>Rule</th><th>Base</th><th>Past</th></tr>
+<tr><td>Most verbs: add -ed</td><td>walk</td><td>walked</td></tr>
+<tr><td>Ends in -e: add -d</td><td>love</td><td>loved</td></tr>
+<tr><td>Consonant + y: change y to -ied</td><td>study</td><td>studied</td></tr>
+<tr><td>Vowel + y: add -ed</td><td>play</td><td>played</td></tr>
+<tr><td>Consonant-vowel-consonant: double the last letter</td><td>stop</td><td>stopped</td></tr></table></div>
+</div></details>
+<details class="subt"><summary>📋 2.2 Common regular verbs<span class="chev">▶</span></summary><div class="body"><div class="wrap"><table>
+<tr><th>Base</th><th>Past</th><th>Example</th></tr>
+<tr><td>work</td><td>worked</td><td>I worked yesterday.</td></tr>
+<tr><td>live</td><td>lived</td><td>She lived in Spain.</td></tr>
+<tr><td>study</td><td>studied</td><td>We studied for the test.</td></tr>
+<tr><td>stop</td><td>stopped</td><td>The bus stopped.</td></tr>
+<tr><td>visit</td><td>visited</td><td>He visited his aunt.</td></tr>
+<tr><td>watch</td><td>watched</td><td>They watched TV.</td></tr>
+<tr><td>listen</td><td>listened</td><td>I listened to the radio.</td></tr>
+<tr><td>travel</td><td>traveled</td><td>She traveled to Miami.</td></tr></table></div></div></details>
+</div></details>
+
+<details class="topic" style="--c:#D99A8B"><summary><span class="ic">🔀</span>3. Irregular verbs<span class="chev">▶</span></summary><div class="body">
+<details class="subt"><summary>❓ 3.1 What are irregular verbs?<span class="chev">▶</span></summary><div class="body">
+<p>They do <b>not</b> take -ed. Their past form changes or stays the same. There is no rule: we need to learn them.</p>
+<div class="ex">I went to school.<br>She ate lunch at noon.<br>We bought new shoes.</div>
+<h3>Four patterns</h3><div class="grid">
+<div class="card"><b>Same form</b><br>cut – cut, put – put, hit – hit</div>
+<div class="card"><b>Vowel change</b><br>sing – sang, drink – drank, swim – swam</div>
+<div class="card"><b>-ought / -aught</b><br>buy – bought, teach – taught</div>
+<div class="card"><b>Completely different</b><br>go – went, am/is – was</div></div>
+</div></details>
+<details class="subt"><summary>🅱️ 3.2 The verb to be<span class="chev">▶</span></summary><div class="body"><div class="wrap"><table>
+<tr><th>Subject</th><th>Past</th><th>Example</th></tr>
+<tr><td>I</td><td>was</td><td>I was tired.</td></tr>
+<tr><td>he / she / it</td><td>was</td><td>She was at home.</td></tr>
+<tr><td>you</td><td>were</td><td>You were late.</td></tr>
+<tr><td>we / they</td><td>were</td><td>They were friends.</td></tr></table></div>
+<p>Negative: wasn’t / weren’t. Question: Was she…? Were they…?</p></div></details>
+<details class="subt"><summary>📋 3.3 Common irregular verbs<span class="chev">▶</span></summary><div class="body"><div class="wrap"><table>
+<tr><th>Base</th><th>Past</th><th>Example</th></tr>
+<tr><td>go</td><td>went</td><td>We went to the beach.</td></tr>
+<tr><td>have</td><td>had</td><td>I had a big breakfast.</td></tr>
+<tr><td>do</td><td>did</td><td>She did her homework.</td></tr>
+<tr><td>see</td><td>saw</td><td>He saw a movie.</td></tr>
+<tr><td>eat</td><td>ate</td><td>They ate rice and beans.</td></tr>
+<tr><td>drink</td><td>drank</td><td>I drank juice.</td></tr>
+<tr><td>come</td><td>came</td><td>She came early.</td></tr>
+<tr><td>take</td><td>took</td><td>He took the bus.</td></tr>
+<tr><td>make</td><td>made</td><td>Mom made dinner.</td></tr>
+<tr><td>buy</td><td>bought</td><td>I bought a phone.</td></tr>
+<tr><td>write</td><td>wrote</td><td>She wrote a letter.</td></tr>
+<tr><td>speak</td><td>spoke</td><td>He spoke English.</td></tr>
+<tr><td>give</td><td>gave</td><td>They gave me a gift.</td></tr>
+<tr><td>get</td><td>got</td><td>We got home at nine.</td></tr>
+<tr><td>know</td><td>knew</td><td>I knew the answer.</td></tr>
+<tr><td>run</td><td>ran</td><td>He ran every morning.</td></tr></table></div></div></details>
+</div></details>
+
+<details class="topic" style="--c:#B9694C"><summary><span class="ic">❓</span>4. Negatives and questions<span class="chev">▶</span></summary><div class="body">
+<details class="subt"><summary>🚫 4.1 Negative sentences<span class="chev">▶</span></summary><div class="body"><div class="grid">
+<div class="card"><b>Affirmative</b><br>Subject + past verb<br><i>She worked yesterday.</i></div>
+<div class="card"><b>Negative</b><br>Subject + didn’t + base verb<br><i>She didn’t work yesterday.</i></div>
+<div class="card"><b>Question</b><br>Did + subject + base verb?<br><i>Did she work yesterday?</i></div></div>
+<h3>The golden rule</h3>
+<p>After <b>did / didn’t</b>, the verb goes back to the base form.</p>
+<p class="bad">✗ She didn’t went.</p><p class="good">✓ She didn’t go.</p></div></details>
+<details class="subt"><summary>💬 4.2 Questions and short answers<span class="chev">▶</span></summary><div class="body"><div class="wrap"><table>
+<tr><th>Question</th><th>Answer</th></tr>
+<tr><td>Did you study?</td><td>Yes, I did. / No, I didn’t.</td></tr>
+<tr><td>Did she go to the party?</td><td>Yes, she did. / No, she didn’t.</td></tr>
+<tr><td>Where did you go?</td><td>I went to the park.</td></tr>
+<tr><td>What did she eat?</td><td>She ate a sandwich.</td></tr>
+<tr><td>When did they arrive?</td><td>They arrived at six.</td></tr>
+<tr><td>Why did he leave?</td><td>He left because he was sick.</td></tr></table></div></div></details>
+</div></details>
+
+<details class="topic" style="--c:#A8805F"><summary><span class="ic">✅</span>5. Practice<span class="chev">▶</span></summary><div class="body">
+<details class="subt"><summary>🧩 5.1 Exercises<span class="chev">▶</span></summary><div class="body">
+<h3>Fill in the blanks</h3>
+<p>Write the Simple Past form. Then tap <b>Check answers</b>.</p>
+<ol class="qs">
+<li>I <input data-a="watched"> (watch) a movie last night.</li>
+<li>She <input data-a="went"> (go) to the market yesterday.</li>
+<li>We <input data-a="studied"> (study) for the exam.</li>
+<li>They <input data-a="bought"> (buy) new bikes.</li>
+<li>He <input data-a="was"> (be) tired after work.</li>
+<li>She <input class="wide" data-a="didn't eat|did not eat"> (not eat) breakfast this morning.</li>
+<li><input data-a="did"> you play soccer yesterday?</li>
+</ol>
+<div class="actions"><button id="chk">Check answers</button><button id="rst" class="alt">Try again</button></div>
+<p id="msg" role="status"></p>
+</div></details>
+<details class="subt"><summary>🔑 5.2 Answer key<span class="chev">▶</span></summary><div class="body">
+<p><b>1.</b> watched, went, studied, bought, was</p>
+<p><b>2.</b> I didn’t work on Sunday. / She didn’t eat breakfast. / They didn’t go to school.</p>
+<p><b>3.</b> Did you play soccer? / Did she visit her aunt? / Did they see the movie?</p></div></details>
+</div></details>
+</main>
+<script>
+document.getElementById('o').onclick=function(){document.querySelectorAll('details').forEach(function(d){d.open=true})};
+document.getElementById('c').onclick=function(){document.querySelectorAll('details').forEach(function(d){d.open=false})};
+(function(){
+var ins=[].slice.call(document.querySelectorAll('.qs input')),msg=document.getElementById('msg');
+ins.forEach(function(i){i.setAttribute('autocomplete','off');i.setAttribute('autocapitalize','off');i.setAttribute('autocorrect','off');i.setAttribute('spellcheck','false');i.addEventListener('input',function(){i.classList.remove('ok','no')})});
+function norm(s){return s.toLowerCase().replace(/[\u2019\u2018`]/g,"'").replace(/\s+/g,' ').trim()}
+document.getElementById('chk').onclick=function(){
+var n=0,blank=0;
+ins.forEach(function(i){var v=norm(i.value);if(!v){blank++;i.classList.remove('ok');i.classList.add('no');return}
+var good=i.getAttribute('data-a').split('|').indexOf(v)>-1;i.classList.toggle('ok',good);i.classList.toggle('no',!good);if(good)n++});
+msg.className='';
+if(n===ins.length){msg.className='win';msg.textContent='\uD83C\uDF89 Perfect! All '+n+' answers are correct!';boom()}
+else{msg.textContent=n+' of '+ins.length+' correct. Fix the red ones and try again.'}};
+document.getElementById('rst').onclick=function(){ins.forEach(function(i){i.value='';i.classList.remove('ok','no')});msg.textContent='';msg.className=''};
+function boom(){
+if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+var old=document.getElementById('fx');if(old)old.remove();
+var c=document.createElement('canvas');c.id='fx';document.body.appendChild(c);
+var x=c.getContext('2d'),W=c.width=innerWidth,H=c.height=innerHeight;
+var cols=['#C9775B','#D9A648','#D99A8B','#E8B98A','#B9694C','#F3DDBF','#A8805F'],P=[];
+for(var k=0;k<160;k++)P.push({x:W/2+(Math.random()-.5)*80,y:H*.55,vx:(Math.random()-.5)*14,vy:-Math.random()*16-4,s:5+Math.random()*7,r:Math.random()*6,vr:(Math.random()-.5)*.4,c:cols[k%cols.length]});
+var t0=Date.now();
+(function f(){var el=Date.now()-t0;x.clearRect(0,0,W,H);
+P.forEach(function(p){p.vy+=.35;p.x+=p.vx;p.y+=p.vy;p.r+=p.vr;x.save();x.translate(p.x,p.y);x.rotate(p.r);x.globalAlpha=Math.max(0,1-el/4000);x.fillStyle=p.c;x.fillRect(-p.s/2,-p.s/4,p.s,p.s/2);x.restore()});
+if(el<4000)requestAnimationFrame(f);else c.remove()})();
+}
+})();
+</script>
+</body>
+</html>
